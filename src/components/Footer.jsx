@@ -1,6 +1,6 @@
 import React from "react";
 import guillaume from "../style/img/logo/guillaumeconrad.png";
-import logo from '../style/img/logo/fiestakid.png';
+import logo from "../style/img/logo/fiestakid.png";
 
 const Footer = () => {
   return (
@@ -24,13 +24,13 @@ const Footer = () => {
           <h4>Nos partenaires</h4>
           <ul>
             <li>
-              <a href="#">
+              <a href="facebook.com">
                 <i class="fa-solid fa-store"></i>
                 <span>Partenaire 1</span>
               </a>
             </li>
             <li>
-              <a href="#">
+              <a href="facebook.com">
                 <i class="fa-solid fa-store"></i>
                 <span>Partenaire 2</span>
               </a>
@@ -41,13 +41,13 @@ const Footer = () => {
           <h4>Mentions légales</h4>
           <ul>
             <li>
-              <a href="#">
+              <a href="facebook.com">
                 <i class="fas fa-at"></i>
                 <span>Politique de confidentialité</span>
               </a>
             </li>
             <li>
-              <a href="#">
+              <a href="facebook.com">
                 <i class="fas fa-at"></i>
                 <span>Conditions d'utilisation</span>
               </a>
@@ -57,7 +57,7 @@ const Footer = () => {
       </div>
       <div className="builder">
         <h6>Edité par: </h6>
-        <a href="#">
+        <a href="facebook.com">
           <img src={guillaume} alt="" />
         </a>
       </div>
