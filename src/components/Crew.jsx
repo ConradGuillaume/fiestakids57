@@ -1,5 +1,6 @@
 import React from "react";
 import tache from "../style/img/backpic/Tache.svg";
+import tache2 from "../style/img/backpic/tache2.svg";
 const Crew = () => {
   return (
     <div className="crewContainer">
@@ -14,6 +15,7 @@ const Crew = () => {
       </article>
       <article className="crew">
         <div className="theCrew">
+          <img src={tache2} alt="" />
           <p className="crewTitle">Une équipe diplomée ! </p>
           <p>
             Les animatrices ont plusieurs années d’expérience dans le métier de
@@ -22,6 +24,7 @@ const Crew = () => {
           </p>
         </div>
         <div className="cost">
+          <img src={tache2} alt="" />
           <p className="crewTitle">Des tarifs compétitifs</p>
           <p>
             Nos tarifs sont accessibles et calculés en fonction de votre nombre
