@@ -1,0 +1,173 @@
+.crewContainer {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  background: url(../style/img/backpic/lineback.svg) center/cover;
+  height: auto;
+  h3 {
+    width: 100%;
+    filter: drop-shadow(0px 0px 0px $color-1);
+    text-shadow: 0px 0px 0px $color-1;
+  }
+  .ages {
+    position: relative;
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    img {
+      margin: 50px 0px;
+      object-fit: cover;
+      height: 700px;
+      width: auto;
+      rotate: 120deg;
+      filter: drop-shadow(5px -5px 2px $color-4);
+    }
+    p {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: absolute;
+      text-align: center;
+      font-weight: 500;
+      width: 25%;
+      font-size: 25px;
+      height: 600px;
+    }
+  }
+  .crew {
+    width: 100%;
+    display: flex;
+    transform: translateY(-250px);
+    .theCrew,
+    .cost {
+      height: 670px;
+      background: url(../style/img/backpic/tache2.svg) center/contain;
+      filter: drop-shadow(5px 5px 3px $color-4);
+      background-repeat: no-repeat;
+      border-radius: 25px;
+      padding: 10px 200px;
+      width: 50%;
+      display: flex;
+      flex-wrap: wrap;
+      .crewTitle {
+        display: flex;
+        height: 30%;
+        justify-content: center;
+        align-items: center;
+        color: $color-1;
+        font-size: 35px;
+        font-family: $font-4;
+        text-shadow: 0px 0px 0px $color-1;
+        filter: drop-shadow(1px 1px 0px black);
+        width: 100%;
+      }
+      p {
+        display: flex;
+        height: 70%;
+        font-size: 23px;
+        justify-content: center;
+        align-items: flex-start;
+        padding: 0px 30px;
+        width: 100%;
+      }
+    }
+  }
+
+  .facebook {
+    margin-left: 2%;
+    font-size: 18px;
+  }
+  i {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 25px;
+    color: rgb(0, 0, 0);
+    border-radius: 40px;
+    margin-left: 10px;
+  }
+  #fb {
+    height: 40px;
+    width: 40px;
+    border-radius: 40px;
+    font-size: 44px;
+    color: $color-3;
+    background: white;
+    margin-left: 25px;
+    cursor: pointer;
+  }
+
+  .contactBtn {
+    display: flex;
+    justify-content: flex-start;
+    transform: translateY(50px);
+    margin-left: 50px;
+    rotate: 10deg;
+    width: 100%;
+    z-index: 5;
+    .contactUs {
+      display: flex;
+      justify-content: center;
+      margin-right: 20%;
+      align-items: center;
+      background-color: $color-2;
+      border: 2px solid $color-1;
+      border-radius: 10px;
+      box-sizing: border-box;
+      color: $color-4;
+      cursor: pointer;
+      font-size: 20px;
+      font-weight: 700;
+      height: 48px;
+      line-height: 24px;
+      max-width: 350px;
+      padding: 0 25px;
+      position: relative;
+      text-align: center;
+      text-decoration: none;
+      user-select: none;
+      -webkit-user-select: none;
+      touch-action: manipulation;
+
+      &:after {
+        background-color: $color-4;
+        border-radius: 10px;
+        content: "";
+        display: block;
+        height: 48px;
+        left: 0;
+        width: 100%;
+        position: absolute;
+        top: -2px;
+        transform: translate(6px, 6px);
+        transition: transform 0.2s ease-out;
+        z-index: -1;
+      }
+
+      &:hover:after {
+        transform: translate(0, 0);
+      }
+
+      &:active {
+        background-color: #ffdeda;
+        outline: 0;
+      }
+
+      &:hover {
+        outline: 0;
+      }
+
+      @media (min-width: 768px) {
+        .contactUs {
+          padding: 0 40px;
+        }
+      }
+    }
+  }
+  .OurLogo {
+    height: 100px;
+    width: 100px;
+  }
+}

@@ -1,0 +1,45 @@
+.NavContain {
+  position: fixed;
+  top: 0;
+  height: 130px;
+  width: 100%;
+  z-index: 5;
+
+  .BtnNavContain {
+    position: absolute;
+    display: flex;
+    right: 0;
+    margin-right: 50px;
+  }
+  .btncontain {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0px 15px;
+    .btnImg {
+      display: flex;
+      position: absolute;
+      background: none;
+      border: none;
+      font-weight: 900;
+      font-size: 19px;
+      color: $color-4;
+      padding: 12px;
+      cursor: pointer;
+      z-index: 5;
+    }
+    img {
+      margin-top: 20px;
+      height: 120px;
+      cursor: pointer;
+      filter: drop-shadow(5px 2px 1px $color-1);
+    }
+  }
+
+  .btnImg button {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
