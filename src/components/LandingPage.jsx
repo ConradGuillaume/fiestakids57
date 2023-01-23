@@ -1,5 +1,4 @@
 import React from "react";
-import back from "../style/img/backpic/ballons.webp";
 import fiestkids from "../style/img/logo/fiestakid.png";
 
 const LandingPage = () => {

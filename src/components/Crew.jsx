@@ -1,5 +1,4 @@
 import React from "react";
-import tache from "../style/img/backpic/Tache.svg";
 import tache2 from "../style/img/backpic/tache2.svg";
 const Crew = () => {
   return (
