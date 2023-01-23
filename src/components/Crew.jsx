@@ -34,7 +34,7 @@ const Crew = () => {
       </article>
       <aside className="contactBtn ">
         <button className="contactUs">
-          Suivez tout de notre actualité, c'est par ici
+          Suivez  nous, c'est par ici
           <i class="fa-solid fa-hand-point-right"></i>
           <i id="fb" class="fa-brands fa-facebook"></i>
         </button>
