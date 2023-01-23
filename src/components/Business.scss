@@ -33,10 +33,7 @@
     width: 100%;
     margin: 50px 0px;
     display: flex;
-    background: url(../style/img/backpic/pix.svg);
-    background-position: center;
-    background-size: cover;
-    background-attachment: fixed;
+    background: red;
     padding-top: 100px;
 
     @media (max-width: 1300px) {
