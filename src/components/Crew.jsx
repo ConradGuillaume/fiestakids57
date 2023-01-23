@@ -6,7 +6,7 @@ const Crew = () => {
     <div className="crewContainer">
       <h3>Des animations pour tout les ages !</h3>
       <article className="ages">
-        <img src={tache} alt="" />
+        <img src={tache2} alt="" />
         <p>
           Nous nous occupons aussi bien des tout petits que des plus grands pour
           vous offrir un maximum de sérénité ! ​ Nous prenons en charge les

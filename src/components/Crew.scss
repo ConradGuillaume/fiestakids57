@@ -2,6 +2,7 @@
   display: flex;
   flex-wrap: wrap;
   align-items: flex-start;
+  overflow: hidden;
   background: url(../style/img/backpic/lineback.svg) center/cover;
   height: auto;
   h3 {
@@ -23,23 +24,19 @@
     }
 
     img {
-      margin: 50px 0px;
+      width: 70%;
       object-fit: cover;
       position: absolute;
-      z-index: 0;
-      height: 80%;
-      width: auto;
-      rotate: 120deg;
+      z-index: -1;
+      @media (max-width: 1300px) {
+        width: 100%;
+      }
+      @media (max-width: 1000px) {
+        width: 75%;
+      }
       @media (max-width: 800px) {
-        height: 80%;
+        width: 100%;
       }
-      @media (max-width: 750px) {
-        height: 70%;
-      }
-      @media (max-width: 550px) {
-        height: 60%;
-      }
-      filter: drop-shadow(5px -5px 2px $color-4);
     }
     p {
       display: flex;

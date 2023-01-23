@@ -5,7 +5,6 @@ import fiestkids from "../style/img/logo/fiestakid.png";
 const LandingPage = () => {
   return (
     <div className="imgTitleContain">
-      <img className="backpic" src={back} alt="" />
       <div className="wrapper">
         <img className="fiesta" src={fiestkids} alt="FiestaKids logo" />
         <div className="text">

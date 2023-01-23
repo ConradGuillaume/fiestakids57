@@ -1,9 +1,12 @@
 .imgTitleContain {
   height: 100vh;
-  // width: 100%;
+  width: 100%;
   display: flex;
   justify-content: flex-start;
   align-items: center;
+  background: url(../style/img/backpic/ballons.webp) center/cover;
+  background-attachment: fixed;
+  backdrop-filter: blur(5px);
   clip-path: polygon(
     100% 0%,
     0% 0%,
@@ -80,17 +83,6 @@
     filter: drop-shadow(2px 2px 3px $color-4);
     @media (max-width: 800px) {
       width: 90%;
-    }
-  }
-  .backpic {
-    position: fixed;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    z-index: -1;
-    filter: blur(2px);
-    @media (max-width: 800px) {
-      object-fit: cover;
     }
   }
 
