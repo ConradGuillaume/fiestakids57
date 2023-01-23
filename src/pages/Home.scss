@@ -4,7 +4,12 @@
   display: flex;
   flex-direction: column;
   scroll-snap-type: block;
+  background: url(../style/img/backpic/back.svg) center/cover;
+  background-attachment: fixed;
   overflow-x: hidden;
   scroll-behavior: smooth;
   overscroll-behavior-y: contain;
+  @media (max-width: 800px) {
+    background: none;
+  }
 }

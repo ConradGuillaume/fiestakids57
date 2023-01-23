@@ -75,6 +75,7 @@
         border-radius: 15px;
         border: 2px inset $color-2;
         box-shadow: 4px 4px 5px #322e2f;
+        background: url(../style/img/backpic/backButton.svg) center/cover;
         padding: 50px;
         font-family: $font-4;
         color: black;
@@ -101,7 +102,7 @@
     width: 50%;
     height: 600px;
     border-radius: 20px;
-    background: red;
+    background: url(../style/img/backpic/peinture.webp) center/cover;
     @media (max-width: 1350px) {
       width: 100%;
       margin: 0px 50px;
