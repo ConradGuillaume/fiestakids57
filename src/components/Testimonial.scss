@@ -5,10 +5,12 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  background: url(../style/img/backpic/pix.svg) center/cover;
+  background: url(../style/img/backpic/backwood.jpg) center/cover;
+  background-attachment: fixed;
   height: 800px;
   margin: 150px 0px;
   z-index: 1;
+  clip-path: polygon(100% 0, 100% 95%, 0 100%, 0 5%);
 }
 
 .slide {

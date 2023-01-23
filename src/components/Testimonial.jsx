@@ -13,7 +13,6 @@ const Testimonial = () => {
     <>
       <h3>Ils nous on fait confiance !</h3>
       <div className="slideContainer">
-        <div className="wavy"></div>
         <Slider className="slide" {...settings}>
           <div class="review-block">
             <div class="reviewer-name">Fiona et Thomas ZILLIOX</div>

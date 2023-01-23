@@ -97,6 +97,9 @@
     @media (max-width: 800px) {
       width: 100%;
     }
+    @media (max-width: 800px) {
+      transform: translateY(-140px);
+    }
     .beforeSlogan {
       font-size: 35px;
       font-family: $font-4;

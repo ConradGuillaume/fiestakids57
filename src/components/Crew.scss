@@ -2,15 +2,23 @@
   display: flex;
   flex-wrap: wrap;
   align-items: flex-start;
-  overflow: hidden;
   background: url(../style/img/backpic/lineback.svg) center/cover;
   height: auto;
+  @media (max-width: 800px) {
+    background: none;
+  }
   h3 {
     width: 100%;
     margin-bottom: 100px;
     filter: drop-shadow(0px 0px 0px $color-1);
     text-shadow: 0px 0px 0px $color-1;
+    @media (max-width: 400px) {
+      margin-bottom: 0;
+      margin-top: 0;
+      font-size: 40px;
+    }
   }
+
   .ages {
     width: 100%;
     height: auto;
@@ -38,6 +46,9 @@
       @media (max-width: 800px) {
         width: 90%;
       }
+      @media (max-width: 400px) {
+        width: 100%;
+      }
     }
     p {
       display: flex;
@@ -55,6 +66,10 @@
       @media (max-width: 550px) {
         width: 70%;
       }
+      @media (max-width: 400px) {
+        padding-left: 4%;
+        font-size: 20px;
+      }
     }
   }
   .crew {
@@ -68,7 +83,7 @@
     .theCrew,
     .cost {
       min-height: auto;
-      filter: drop-shadow(5px 5px 3px $color-4);
+      filter: drop-shadow(2px 2px 1px $color-4);
       background-repeat: no-repeat;
       border-radius: 25px;
       width: 50%;
@@ -108,7 +123,7 @@
         align-items: center;
         color: $color-1;
         font-size: 35px;
-        font-family: $font-4;
+        font-family: $font-2;
         text-shadow: 0px 0px 0px $color-1;
         margin: 0;
         @media (max-width: 500px) {
@@ -118,8 +133,9 @@
           position: absolute;
           top: -220px;
           rotate: -10deg;
+          padding: 0;
         }
-        filter: drop-shadow(1px 1px 0px black);
+
         width: 100%;
       }
 
@@ -140,6 +156,8 @@
         }
         @media (max-width: 500px) {
           margin-top: 20px;
+          font-size: 20px;
+          padding-right: 6%;
         }
       }
     }
