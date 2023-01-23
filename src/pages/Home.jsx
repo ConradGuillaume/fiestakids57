@@ -6,7 +6,7 @@ import LandingPage from "../components/LandingPage";
 
 import NavBar from "../components/NavBar";
 import Services from "../components/Services";
-//import Testimonial from "../components/Testimonial";
+import Testimonial from "../components/Testimonial";
 
 const Home = () => {
   return (
@@ -16,6 +16,7 @@ const Home = () => {
       <Business />
       <Services />
       <Crew />
+      <Testimonial />
       <Footer />
     </div>
   );
