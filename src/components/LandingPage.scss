@@ -1,12 +1,12 @@
 .imgTitleContain {
   height: 100vh;
   width: 100%;
+  background: url(../style/img/backpic/ballons.webp) center/cover;
+  background-attachment: scroll;
+
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  background: url(../style/img/backpic/ballons.webp) center/cover;
-  background-attachment: fixed;
-  backdrop-filter: blur(5px);
   clip-path: polygon(
     100% 0%,
     0% 0%,
