@@ -33,14 +33,14 @@
     width: 100%;
     margin: 50px 0px;
     display: flex;
-    background: url(../style/img/backpic/backwood.jpg) center/cover;
+    background: url(../style/img/backpic/backwood.jpg) center;
     background-attachment: scroll;
     padding-top: 100px;
     clip-path: polygon(100% 5%, 100% 100%, 0 95%, 0 0);
 
     @media (max-width: 1300px) {
-      justify-content: center;
       height: auto;
+      justify-content: center;
       align-items: center;
       flex-direction: column;
     }
