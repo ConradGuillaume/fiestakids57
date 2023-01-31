@@ -13,7 +13,7 @@ body {
 
 @font-face {
   font-family: "font-4";
-  src: url(../style/Fonts/FrederickatheGreat-Regular.ttf);
+  src: url(../style/Fonts/ChelseaMarket-Regular.ttf);
 }
 @font-face {
   font-family: "font-1";
@@ -41,7 +41,15 @@ $font-5: "font-5", serif;
   font-family: $font-2;
 }
 
-$color-1: #b666d2;
+$color-1: #a415a3;
 $color-2: #e2d810;
 $color-3: #12a4d9;
 $color-4: #322e2f;
+a {
+  color: white;
+  list-style-type: none;
+  text-decoration: none;
+  &:visited {
+    color: white;
+  }
+}

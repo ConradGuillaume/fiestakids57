@@ -6,7 +6,7 @@
     text-align: center;
     padding: 80px 40px;
     color: $color-1;
-    text-shadow: 0px 1px $color-1;
+    text-shadow: 4px 0px #322e2f;
     rotate: (-5deg);
     filter: drop-shadow(1px 1px 0px $color-4);
     @media (max-width: 800px) {
@@ -34,7 +34,7 @@
     margin: 50px 0px;
     display: flex;
     background: url(../style/img/backpic/backwood.jpg) center;
-    background-attachment: scroll;
+    background-attachment: fixed;
     padding-top: 100px;
     clip-path: polygon(100% 5%, 100% 100%, 0 95%, 0 0);
 
@@ -56,14 +56,18 @@
       }
     }
     .entreprise {
-      background: #b666d2a1;
+      background: #b566d254;
       border-radius: 15px;
-      border: 2px solid $color-2;
       margin: 50px;
       text-align: center;
       font-size: 27px;
       padding: 50px;
-      box-shadow: 7px 6px 7px 0px #322e2f;
+
+      box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+      backdrop-filter: blur(3px);
+      -webkit-backdrop-filter: blur(0.5px);
+      border-radius: 10px;
+      border: 1px solid rgba(255, 255, 255, 0.18);
       @media (max-width: 500px) {
         margin: 5px;
         font-size: 22px;

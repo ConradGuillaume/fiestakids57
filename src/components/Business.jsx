@@ -38,8 +38,7 @@ const Business = () => {
             Maquillages,sculptures de ballons, barbe à papa, mascotes grands
             jeux, activités... Notre expérience vous garantira sérénité et
             tranquillité pour profiter au maximum, vous et vos convives !
-            FiestaKids57 est un regroupement d'autoentrepreneurs diplômés et
-            qualifiés!
+            FiestaKids57 est une sociétée d'entrepreneurs diplômés et qualifiés!
           </p>
         </div>
       </article>

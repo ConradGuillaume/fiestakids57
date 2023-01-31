@@ -1,0 +1,101 @@
+.team_container {
+  height: 100vh;
+  width: 100%;
+  overflow-y: hidden;
+  background: $color-1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  article {
+    width: 70%;
+    height: 100%;
+    background: $color-1;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    .content {
+      display: flex;
+      flex-direction: column;
+      width: 65%;
+      height: 100%;
+      align-items: center;
+      justify-content: center;
+      h3 {
+        margin-top: 2%;
+        margin-left: 4%;
+        text-shadow: -4px -0.5px 0px black;
+        filter: drop-shadow(-0.5px 0px 0px $color-4);
+        color: white;
+      }
+      .profil-container {
+        margin-top: 200px;
+        width: 100%;
+        display: flex;
+        justify-content: space-evenly;
+        .card {
+          display: flex;
+          justify-content: center;
+          flex-direction: column;
+          align-items: center;
+
+          width: 190px;
+          height: 254px;
+          background: rgb(236, 236, 236);
+          border-radius: 15px;
+          border: 1px solid rgb(73, 70, 70);
+          box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px,
+            rgba(0, 0, 0, 0.3) 0px 7px 13px -3px,
+            rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+          p {
+            color: $color-1;
+          }
+          .prenom {
+            margin-top: 0;
+            font-size: 25px;
+          }
+          .profession {
+            text-align: center;
+          }
+          .titre {
+            text-align: center;
+          }
+        }
+      }
+      h4 {
+        color: white;
+        letter-spacing: 2px;
+        text-shadow: -3px 0px 0px black;
+        display: flex;
+        align-items: center;
+        height: 100%;
+        text-align: center;
+        font-size: 29px;
+      }
+    }
+  }
+
+  aside {
+    width: 30%;
+    height: 100%;
+    background: $color-2;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    img {
+      transform: translateX(-280px);
+      position: absolute;
+      height: 500px;
+      width: 500px;
+      object-fit: cover;
+      border-radius: 50%;
+      z-index: 2;
+      border: 4px $color-3;
+      border-style: groove;
+      box-shadow: -20px 0px 1px 20px #e2d810;
+      filter: drop-shadow(40px 0px 1px $color-1);
+    }
+  }
+}

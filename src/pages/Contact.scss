@@ -1,0 +1,225 @@
+.contact_container {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  overflow-y: hidden;
+  background: $color-1;
+  overflow: hidden;
+  @media (max-width: 1000px) {
+  }
+
+  .contact {
+    width: 30%;
+    height: 100%;
+    background: $color-1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-left: 0;
+
+    @media (max-width: 1250px) {
+      width: 38%;
+    }
+    @media (max-width: 1000px) {
+      width: 100%;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .fiesta {
+      width: 250px;
+      z-index: 2;
+      @media (max-width: 1000px) {
+        width: 350px;
+      }
+      @media (max-width: 700px) {
+        transform: translateY(25px);
+      }
+    }
+
+    article {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      z-index: 2;
+
+      .contact-us {
+        padding: 20px;
+        font-size: 30px;
+        transform: translateY(25px);
+        margin-bottom: 10px;
+        color: white;
+        text-shadow: -3px 0px 0px black;
+        filter: drop-shadow(-0.5px 0px 0px black);
+      }
+      .phone {
+        display: flex;
+        border: 2px groove $color-1;
+        padding: 5px 20px;
+        font-size: 25px;
+        color: white;
+        background: $color-4;
+        border-radius: 25px;
+        box-shadow: 0px 3px 3px 1px #322e2f;
+        z-index: 2;
+        @media (max-width: 370px) {
+          font-size: 21px;
+        }
+
+        a {
+          text-shadow: -3px 0px 0px rgb(0, 0, 0);
+          filter: drop-shadow(-0.5px 0px 0px rgb(0, 0, 0));
+        }
+
+        i {
+          margin: 0;
+          margin-right: 10px;
+          border: 2px solid;
+          color: $color-1;
+          padding: 5px;
+          text-shadow: -1px 1px 0px rgb(0, 0, 0);
+          filter: drop-shadow(1px 1px 2px black);
+          border-radius: 50%;
+          background: white;
+        }
+      }
+    }
+  }
+  .contact_right {
+    width: 70%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    @media (max-width: 1250px) {
+      width: 62%;
+    }
+    @media (max-width: 1000px) {
+      display: none;
+    }
+    .empty {
+      width: 40%;
+      height: 100%;
+      --mask: radial-gradient(40px at 0 75%, #0000 98%, #000) 40px 50%/51% 160px
+          repeat-y,
+        radial-gradient(40px at 50% 25%, #000 99%, #0000 101%) left/80px 160px
+          repeat-y,
+        radial-gradient(40px at 100% 25%, #0000 98%, #000) calc(100% - 40px) 50%/51%
+          160px repeat-y,
+        radial-gradient(40px at 50% 75%, #000 99%, #0000 101%) right/80px 160px
+          repeat-y;
+      -webkit-mask: var(--mask);
+      mask: var(--mask);
+      @media (max-width: 1000px) {
+        display: none;
+      }
+      svg {
+        width: auto;
+        height: 100%;
+      }
+    }
+    .right_block {
+      width: 60%;
+      height: 100%;
+      background: $color-1;
+    }
+    img {
+      transform: translate(-80px, 50px);
+      border-radius: 25px;
+      box-shadow: 3px 3px 4px 2px black;
+      width: 500px;
+      height: 500px;
+      object-fit: contain;
+      position: absolute;
+      border: 3px groove rgb(140, 146, 146);
+      z-index: 5;
+      @media (max-width: 1250px) {
+        transform: translate(-10px, 50px);
+      }
+      @media (max-width: 1000px) {
+        transform: none;
+        width: 450px;
+        height: 450px;
+        display: none;
+      }
+    }
+  }
+  .fa-brands.fa-square-facebook {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 50px;
+    height: 40px;
+    border-radius: 50%;
+    color: #3b5998;
+    background: white;
+  }
+  .follow-us {
+    transform: translateY(-30px);
+  }
+  .pic-container {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    width: 100%;
+    height: 100%;
+    img {
+      height: 150px;
+      width: 150px;
+      border-radius: 50%;
+      object-fit: contain;
+      z-index: 0;
+      transition: 2s ease;
+    }
+
+    .prest3 {
+      position: absolute;
+      left: 2%;
+      bottom: 20%;
+      @media (max-width: 700px) {
+        bottom: 0;
+        left: 1%;
+      }
+    }
+    .prest4 {
+      position: absolute;
+      bottom: 2%;
+      right: 8%;
+      @media (max-width: 700px) {
+        bottom: 0;
+        right: 1%;
+      }
+    }
+  }
+  .cut {
+    position: absolute;
+    top: 0;
+    z-index: 0;
+    height: 46%;
+    width: 100%;
+    background: url(../style/img/backpic/backwood.jpg) center/cover;
+    --mask: radial-gradient(30px at 75% 100%, #0000 98%, #000) 50%
+        calc(100% - 30px) / 120px 100% repeat-x,
+      radial-gradient(30px at 25% 50%, #000 99%, #0000 101%) bottom/120px 60px
+        repeat-x;
+    -webkit-mask: var(--mask);
+    mask: var(--mask);
+  }
+  .topCut {
+    position: absolute;
+    top: 0;
+    height: 10%;
+    width: 100%;
+    z-index: 0;
+    background: $color-1;
+    --mask: radial-gradient(30px at 75% 100%, #0000 98%, #000) 50%
+        calc(100% - 30px) / 120px 100% repeat-x,
+      radial-gradient(30px at 25% 50%, #000 99%, #0000 101%) bottom/120px 60px
+        repeat-x;
+    -webkit-mask: var(--mask);
+    mask: var(--mask);
+  }
+}
