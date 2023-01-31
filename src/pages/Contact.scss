@@ -30,12 +30,6 @@
     .fiesta {
       width: 250px;
       z-index: 2;
-      @media (max-width: 1000px) {
-        width: 350px;
-      }
-      @media (max-width: 700px) {
-        transform: translateY(25px);
-      }
     }
 
     article {
@@ -60,6 +54,7 @@
         border: 2px groove $color-1;
         padding: 5px 20px;
         font-size: 25px;
+        margin-top: 0;
         color: white;
         background: $color-4;
         border-radius: 25px;
@@ -198,23 +193,9 @@
     position: absolute;
     top: 0;
     z-index: 0;
-    height: 46%;
+    height: 12%;
     width: 100%;
     background: url(../style/img/backpic/backwood.jpg) center/cover;
-    --mask: radial-gradient(30px at 75% 100%, #0000 98%, #000) 50%
-        calc(100% - 30px) / 120px 100% repeat-x,
-      radial-gradient(30px at 25% 50%, #000 99%, #0000 101%) bottom/120px 60px
-        repeat-x;
-    -webkit-mask: var(--mask);
-    mask: var(--mask);
-  }
-  .topCut {
-    position: absolute;
-    top: 0;
-    height: 10%;
-    width: 100%;
-    z-index: 0;
-    background: $color-1;
     --mask: radial-gradient(30px at 75% 100%, #0000 98%, #000) 50%
         calc(100% - 30px) / 120px 100% repeat-x,
       radial-gradient(30px at 25% 50%, #000 99%, #0000 101%) bottom/120px 60px

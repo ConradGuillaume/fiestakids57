@@ -1436,7 +1436,6 @@ const Contact = () => {
       {screenWidth < 1000 && (
         <div className="pic-container">
           <div className="cut"></div>
-          <div className="topCut"></div>
           <img className="prest3" src={prest3} alt="" />
           <img className="prest4" src={prest4} alt="" />
         </div>
