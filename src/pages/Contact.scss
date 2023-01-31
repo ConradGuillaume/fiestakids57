@@ -7,7 +7,11 @@
   overflow: hidden;
   @media (max-width: 1000px) {
   }
-
+  .contact-phone-contain {
+    @media (max-width: 400px) {
+      transform: translateY(-50px);
+    }
+  }
   .contact {
     width: 30%;
     height: 100%;
@@ -152,7 +156,9 @@
     background: white;
   }
   .follow-us {
-    transform: translateY(-30px);
+        @media (max-width: 400px) {
+      transform: translateY(-120px);
+    }
   }
   .pic-container {
     position: absolute;

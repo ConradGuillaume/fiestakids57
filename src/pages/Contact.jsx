@@ -24,7 +24,7 @@ const Contact = () => {
       <NavBar />
       <div className="contact">
         <img className="fiesta" src={fiestakid} alt="" />
-        <article>
+        <article className="contact-phone-contain">
           <p className="contact-us">Nous contacter :</p>
           <p className="phone">
             <a href="tel:+33 6.77.00.91.57">
