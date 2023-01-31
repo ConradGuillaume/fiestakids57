@@ -68,16 +68,16 @@ const BurgerNav = () => {
             className="burger-nav"
           >
             <li>
-              <Link to="competence"> Accueil</Link>
+              <Link to="/"> Accueil</Link>
             </li>
             <li>
-              <Link to="portfolio">Prestations</Link>
+              <Link to="/prestation">Prestations</Link>
             </li>
             <li>
-              <Link to="apropos">Contact</Link>
+              <Link to="/contact">Contact</Link>
             </li>
             <li>
-              <Link to="contact">L'équipe</Link>
+              <Link to="/equipe">L'équipe</Link>
             </li>
           </motion.nav>
         )}
