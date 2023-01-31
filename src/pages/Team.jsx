@@ -1,10 +1,12 @@
 import React from "react";
+import BurgerNav from "../components/BurgerNav";
 import NavBar from "../components/NavBar";
 import team from "../style/img/backpic/team.jpeg";
 
 const Team = () => {
   return (
     <div className="team_container">
+      <BurgerNav />
       <NavBar />
       <article>
         <div className="content">

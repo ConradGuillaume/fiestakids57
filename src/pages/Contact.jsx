@@ -6,6 +6,7 @@ import fille from "../style/img/backpic/presta.jpg";
 import fiestakid from "../style/img/logo/fiestakid.png";
 import prest3 from "../style/img/backpic/presta3.jpg";
 import prest4 from "../style/img/backpic/presta4.jpg";
+import BurgerNav from "../components/BurgerNav";
 
 const Contact = () => {
   const [screenWidth, setScreenWidth] = useState(window.innerWidth);
@@ -19,6 +20,7 @@ const Contact = () => {
   }, []);
   return (
     <div className="contact_container">
+      <BurgerNav />
       <NavBar />
       <div className="contact">
         <img className="fiesta" src={fiestakid} alt="" />

@@ -1,7 +1,7 @@
 import React from "react";
 import { useState } from "react";
+import { NavLink } from "react-router-dom";
 import { AnimatePresence, motion, useAnimation } from "framer-motion";
-import { Link } from "react-scroll";
 
 const BurgerNav = () => {
   const [burger, SetBurger] = useState(false);
@@ -68,16 +68,16 @@ const BurgerNav = () => {
             className="burger-nav"
           >
             <li>
-              <Link to="/"> Accueil</Link>
+              <NavLink to="/"> Accueil</NavLink>
             </li>
             <li>
-              <Link to="/prestation">Prestations</Link>
+              <NavLink to="/prestation">Prestations</NavLink>
             </li>
             <li>
-              <Link to="/contact">Contact</Link>
+              <NavLink to="/contact">Contact</NavLink>
             </li>
             <li>
-              <Link to="/equipe">L'équipe</Link>
+              <NavLink to="/equipe">L'équipe</NavLink>
             </li>
           </motion.nav>
         )}
