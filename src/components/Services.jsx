@@ -17,7 +17,7 @@ const Services = () => {
       setIndex((prevIndex) => (prevIndex + 1) % images.length);
     }, 5000);
     return () => clearInterval(intervalId);
-  }, []);
+  }, [images.length]);
   return (
     <div className="serviceContainer">
       <h2>Nos Animations !</h2>
