@@ -6,9 +6,10 @@ const Crew = () => {
       <h3>Des animations pour tout les ages !</h3>
       <article className="ages">
         <p className="text">
-          Nous nous occupons aussi bien des tout petits que des plus grands pour
-          vous offrir un maximum de sérénité ! ​ Nous prenons en charge les
-          enfants de 0 à 12 ans !
+          Chez nous, tous les enfants sont les bienvenus! Du plus petit au plus
+          grand, nous nous occupons de tous avec bienveillance pour vous offrir
+          une sérénité maximale. Nous sommes là pour prendre soin des enfants de
+          0 à 12 ans.
         </p>
       </article>
       <article className="crew">
@@ -17,9 +18,11 @@ const Crew = () => {
           <div class="circle"></div>
           <p className="title">Une équipe diplomée !</p>
           <p className="undertitle">
-            Les animatrices ont plusieurs années d’expérience dans le métier de
-            l'animation et sont toutes diplômées ! BAFA, BAFD, CAP petite
-            enfance, Master métier de l'enseignement et CRPE . Quoi de mieux ?
+            Nos animatrices sont des professionnelles , avec plusieurs années
+            d'expérience dans l'animation. Elles sont toutes diplômées avec des
+            titres comme le BAFA, le BAFD, le CAP petite enfance, le Master
+            métier de l'enseignement et le CRPE. Offrez à vos enfants les
+            meilleures animations en toute confiance!
           </p>
           <div class="card-inner"></div>
         </div>
@@ -28,9 +31,10 @@ const Crew = () => {
           <div class="circle"></div>
           <p className="title">Des tarifs compétitifs</p>
           <p className="text">
-            Nos tarifs sont accessibles et calculés en fonction de votre nombre
-            d'enfants. Le plus c'est que vous n'avez rien à penser ! Nous nous
-            occupons de tout et fournissons tout le matériel nécessaire !
+            Chez nous, vous bénéficiez de tarifs abordables adaptés à votre
+            nombre d'enfants. Et le plus , c'est que nous nous occupons de tout
+            pour vous! Fini les soucis, nous fournissons tout le matériel
+            nécessaire pour des moments de pur bonheur pour vos enfants.
           </p>
           <div class="card-inner"></div>
         </div>
