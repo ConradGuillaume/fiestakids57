@@ -33,10 +33,13 @@
     width: 100%;
     margin: 50px 0px;
     display: flex;
-    background: url(../style/img/backpic/backwood.jpg) center;
+    background: url(../style/img/backpic/backwood.webp) center;
     background-attachment: fixed;
     padding-top: 100px;
     clip-path: polygon(100% 5%, 100% 100%, 0 95%, 0 0);
+    @media (max-width: 640px) {
+      background: url(../style/img/backpic/backwood_m.webp);
+    }
     @media (max-width: 800px) {
       background-attachment: scroll;
     }

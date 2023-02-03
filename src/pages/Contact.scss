@@ -202,7 +202,7 @@
     z-index: 0;
     height: 22%;
     width: 100%;
-    background: url(../style/img/backpic/backwood.jpg) center/cover;
+    background: url(../style/img/backpic/backwood.webp) center/cover;
     clip-path: polygon(
       100% 0%,
       0% 0%,
@@ -258,5 +258,8 @@
       98% 55.42%,
       100% 55.33%
     );
+  @media (max-width: 640px) {
+    background: url(../style/img/backpic/backwood_m.webp) ;
+  }
   }
 }

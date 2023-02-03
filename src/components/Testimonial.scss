@@ -5,12 +5,15 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  background: url(../style/img/backpic/backwood.jpg) center/cover;
+  background: url(../style/img/backpic/backwood.webp) center/cover;
   background-attachment: fixed;
   height: 800px;
   margin: 150px 0px;
   z-index: 1;
   clip-path: polygon(100% 0, 100% 95%, 0 100%, 0 5%);
+  @media (max-width: 640px) {
+    background: url(../style/img/backpic/backwood_m.webp) ;
+  }
   @media (max-width: 800px) {
     background-attachment: scroll;
   }
@@ -93,7 +96,7 @@
   color: $color-1;
   text-align: center;
   font-family: $font-4;
-    text-shadow: 2px 0px 0px #bb6dba;
+  text-shadow: 2px 0px 0px #bb6dba;
   font-weight: 500;
   font-size: 55px;
   filter: drop-shadow(1px 1px 0px #322e2f);
