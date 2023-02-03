@@ -4,6 +4,7 @@
   display: flex;
   overflow-y: hidden;
   background: $color-1;
+  position: relative;
   overflow: hidden;
   overflow-y: hidden;
   @media (max-width: 1000px) {
@@ -258,8 +259,8 @@
       98% 55.42%,
       100% 55.33%
     );
-  @media (max-width: 640px) {
-    background: url(../style/img/backpic/backwood_m.webp) ;
-  }
+    @media (max-width: 640px) {
+      background: url(../style/img/backpic/backwood_m.webp);
+    }
   }
 }
