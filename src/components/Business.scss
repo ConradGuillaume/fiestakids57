@@ -77,6 +77,9 @@
         margin: 5px;
         font-size: 22px;
       }
+      @media (max-width: 650px) {
+        backdrop-filter: none;
+      }
     }
     hi {
       color: black;
