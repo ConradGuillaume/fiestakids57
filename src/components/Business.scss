@@ -66,12 +66,14 @@
       margin: 50px;
       text-align: center;
       font-size: 27px;
+      font-weight: 600;
       color: $color-1;
       padding: 50px;
       box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
       backdrop-filter: blur(3px);
       -webkit-backdrop-filter: blur(0.5px);
       border-radius: 10px;
+      text-shadow: 1px 0px 0px white;
       border: 1px solid rgba(255, 255, 255, 0.18);
       @media (max-width: 500px) {
         line-height: 24px;
