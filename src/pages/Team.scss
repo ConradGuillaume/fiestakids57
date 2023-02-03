@@ -41,6 +41,7 @@
         color: white;
         z-index: 2;
         @media (max-width: 880px) {
+          font-size: 33px;
           margin-top: 0px;
         }
         @media (max-width: 450px) {
@@ -60,14 +61,18 @@
           justify-content: space-evenly;
           flex-direction: column;
           align-items: center;
-          width: 190px;
-          height: 254px;
+          width: 290px;
+          height: 354px;
           background: rgb(236, 236, 236);
           border-radius: 15px;
           border: 1px solid rgb(73, 70, 70);
           box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px,
             rgba(0, 0, 0, 0.3) 0px 7px 13px -3px,
             rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+          @media (max-width: 1460px) {
+            width: 200px;
+            height: 240px;
+          }
           @media (max-width: 450px) {
             width: 150px;
             height: 200px;
