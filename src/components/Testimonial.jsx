@@ -11,7 +11,7 @@ const Testimonial = () => {
   };
   return (
     <>
-      <h3>Ils nous on fait confiance !</h3>
+      <p className="testiTitle">Ils nous on fait confiance !</p>
       <div className="slideContainer">
         <Slider className="slide" {...settings}>
           <div class="review-block">
