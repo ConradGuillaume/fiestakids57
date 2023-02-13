@@ -1,24 +1,24 @@
-import React, { useRef, useState } from "react";
-import { AnimatePresence, motion, useInView } from "framer-motion";
+import React from "react";
+import { AnimatePresence, motion } from "framer-motion";
 
 const appear = {
   hidden: { opacity: 0 },
-  visible: { transition: { duration: 0.5 }, opacity: 1 },
+  visible: { transition: { delay: 0.4, duration: 0.5 }, opacity: 1 },
+  hidden1: { opacity: 0, y: 100 },
+  visible1: { transition: { duration: 0.5 }, opacity: 1, y: 0 },
 };
 
 const Business = () => {
-  const [isInView, setIsInView] = useState(false);
-  const ref = useRef(null);
-  useInView(ref, {
-    threshold: 0,
-    onEnter: () => setIsInView(true),
-    onLeave: () => setIsInView(false),
-  });
-  console.log("lul", isInView);
-
   return (
     <div className="businessContain">
-      <h1>Votre équipe d'animation pour vos enfants en Moselle!</h1>
+      <motion.h1
+        variants={appear}
+        initial="hidden1"
+        whileInView="visible1"
+        viewport={{ once: true, amount: 0.8 }}
+      >
+        Votre équipe d'animation pour vos enfants en Moselle!
+      </motion.h1>
       <h2>Mariage,Anniversaire,Soirée... Que la fête commence !</h2>
       <article className="resume">
         <div className="wave">
@@ -45,12 +45,10 @@ const Business = () => {
         <div className="mark"></div>
         <AnimatePresence>
           <motion.div
-            ref={ref}
             className="pixWrapper"
             variants={appear}
             initial="hidden"
             whileInView="visible"
-            viewport={{ once: true, amount: 0.8 }}
           >
             <div className="pix"></div>
           </motion.div>
@@ -61,7 +59,6 @@ const Business = () => {
             className="txtWrapper"
             initial="hidden"
             whileInView="visible"
-            viewport={{ once: true, amount: 0.8 }}
           >
             <p className="entreprise">
               Fiestakids57 ! Faites nous confiance pour occuper vos enfants lors
