@@ -1,6 +1,21 @@
-import React from "react";
+import React, { useRef, useState } from "react";
+import { AnimatePresence, motion, useInView } from "framer-motion";
+
+const appear = {
+  hidden: { opacity: 0 },
+  visible: { transition: { duration: 0.5 }, opacity: 1 },
+};
 
 const Business = () => {
+  const [isInView, setIsInView] = useState(false);
+  const ref = useRef(null);
+  useInView(ref, {
+    threshold: 0,
+    onEnter: () => setIsInView(true),
+    onLeave: () => setIsInView(false),
+  });
+  console.log("lul", isInView);
+
   return (
     <div className="businessContain">
       <h1>Votre équipe d'animation pour vos enfants en Moselle!</h1>
@@ -27,20 +42,39 @@ const Business = () => {
             </g>
           </svg>
         </div>
-        <div className="pixWrapper">
-          <div className="pix"></div>
-        </div>
-        <div className="txtWrapper">
-          <p className="entreprise">
-            Fiestakids57 ! Faites nous confiance pour occuper vos enfants lors
-            de vos Mariages, anniversaires ou toutes autres occasions ! Nous
-            nous chargeons de tout pour que votre évènement soit inoubliable:
-            Maquillages,sculptures de ballons, barbe à papa, mascotes grands
-            jeux, activités... Notre expérience vous garantira sérénité et
-            tranquillité pour profiter au maximum, vous et vos convives !
-            FiestaKids57 est une sociétée d'entrepreneurs diplômés et qualifiés!
-          </p>
-        </div>
+        <div className="mark"></div>
+        <AnimatePresence>
+          <motion.div
+            ref={ref}
+            className="pixWrapper"
+            variants={appear}
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true, amount: 0.8 }}
+          >
+            <div className="pix"></div>
+          </motion.div>
+        </AnimatePresence>
+        <AnimatePresence>
+          <motion.div
+            variants={appear}
+            className="txtWrapper"
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true, amount: 0.8 }}
+          >
+            <p className="entreprise">
+              Fiestakids57 ! Faites nous confiance pour occuper vos enfants lors
+              de vos Mariages, anniversaires ou toutes autres occasions ! Nous
+              nous chargeons de tout pour que votre évènement soit inoubliable:
+              Maquillages,sculptures de ballons, barbe à papa, mascotes grands
+              jeux, activités... Notre expérience vous garantira sérénité et
+              tranquillité pour profiter au maximum, vous et vos convives !
+              FiestaKids57 est une sociétée d'entrepreneurs diplômés et
+              qualifiés!
+            </p>
+          </motion.div>
+        </AnimatePresence>
       </article>
     </div>
   );

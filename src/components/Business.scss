@@ -1,4 +1,13 @@
 .businessContain {
+  .mark {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    height: 0.001%;
+    width: 2%;
+    background: black;
+    //opacity: 0;
+  }
   h1 {
     font-family: $font-4;
     font-weight: 500;
@@ -100,6 +109,7 @@
       @media (max-width: 1300px) {
         width: 100%;
       }
+
       .pix {
         margin: 0px 50px;
         width: 500px;
@@ -117,5 +127,6 @@
         }
       }
     }
+
   }
 }
