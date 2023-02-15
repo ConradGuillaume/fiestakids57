@@ -90,6 +90,7 @@
           width: 100px;
           font-size: 20px;
           padding: 30px;
+          backdrop-filter: none;
         }
         @media (max-width: 500px) {
           padding: 20px 0px;
