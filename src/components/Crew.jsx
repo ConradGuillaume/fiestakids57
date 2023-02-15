@@ -1,9 +1,36 @@
 import React from "react";
-
+import { motion } from "framer-motion";
+const appear = {
+  hidden: { opacity: 0, x: "-20vw", rotate: 50 },
+  visible: {
+    transition: { delay: 0.4, duration: 0.5 },
+    opacity: 1,
+    x: 0,
+    rotate: 0,
+  },
+  hidden1: { opacity: 0, y: 100 },
+  visible1: { transition: { duration: 0.5 }, opacity: 1, y: 0 },
+};
+const appearl = {
+  hidden: { opacity: 0, x: "20vw", rotate: -50 },
+  visible: {
+    transition: { delay: 0.4, duration: 0.5 },
+    opacity: 1,
+    x: 0,
+    rotate: 0,
+  },
+};
 const Crew = () => {
   return (
     <div className="crewContainer">
-      <h3>Des animations pour tout les ages !</h3>
+      <motion.h3
+        variants={appear}
+        initial="hidden1"
+        whileInView="visible1"
+        viewport={{ once: true, amount: 0.8 }}
+      >
+        Des animations pour tout les ages !
+      </motion.h3>
       <article className="ages">
         <p className="text">
           Chez nous, tous les enfants sont les bienvenus! Du plus petit au plus
@@ -13,7 +40,12 @@ const Crew = () => {
         </p>
       </article>
       <article className="crew">
-        <div class="card">
+        <motion.div
+          class="card"
+          variants={appear}
+          initial="hidden"
+          whileInView="visible"
+        >
           <div class="circle"></div>
           <div class="circle"></div>
           <p className="title">Une équipe diplomée !</p>
@@ -25,8 +57,13 @@ const Crew = () => {
             meilleures animations en toute confiance!
           </p>
           <div class="card-inner"></div>
-        </div>
-        <div class="card">
+        </motion.div>
+        <motion.div
+          class="card"
+          variants={appearl}
+          initial="hidden"
+          whileInView="visible"
+        >
           <div class="circle"></div>
           <div class="circle"></div>
           <p className="title">Des tarifs compétitifs</p>
@@ -37,7 +74,7 @@ const Crew = () => {
             nécessaire pour des moments de pur bonheur pour vos enfants.
           </p>
           <div class="card-inner"></div>
-        </div>
+        </motion.div>
       </article>
       <aside className="contactBtn ">
         <button className="contactUs">

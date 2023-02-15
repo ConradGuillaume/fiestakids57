@@ -1,6 +1,17 @@
 import React from "react";
 import Slider from "react-slick";
-
+import { motion } from "framer-motion";
+const appear = {
+  hidden: { opacity: 0, x: "-20vw", rotate: 50 },
+  visible: {
+    transition: { delay: 0.4, duration: 0.5 },
+    opacity: 1,
+    x: 0,
+    rotate: 0,
+  },
+  hidden1: { opacity: 0, y: 300 },
+  visible1: { transition: { duration: 0.5 }, opacity: 1, y: 80 },
+};
 const Testimonial = () => {
   var settings = {
     dots: false,
@@ -11,7 +22,15 @@ const Testimonial = () => {
   };
   return (
     <>
-      <p className="testiTitle">Ils nous on fait confiance !</p>
+      <motion.p
+        className="testiTitle"
+        variants={appear}
+        initial="hidden1"
+        whileInView="visible1"
+        viewport={{ once: true, amount: 0.8 }}
+      >
+        Ils nous on fait confiance !
+      </motion.p>
       <div className="slideContainer">
         <Slider className="slide" {...settings}>
           <div class="review-block">

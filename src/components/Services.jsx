@@ -5,14 +5,24 @@ import image1 from "../style/img/backpic/chateau.jpg";
 import image2 from "../style/img/backpic/fille_ballon.jpg";
 import image3 from "../style/img/backpic/peinture.webp";
 const appear = {
-  hidden: { opacity: 0, x: "-20vw" },
-  visible: { transition: { delay: 0.4, duration: 0.5 }, opacity: 1, x: 0 },
+  hidden: { opacity: 0, x: "-20vw", rotate: 50 },
+  visible: {
+    transition: { delay: 0.4, duration: 0.5 },
+    opacity: 1,
+    x: 0,
+    rotate: 0,
+  },
   hidden1: { opacity: 0, y: 100 },
   visible1: { transition: { duration: 0.5 }, opacity: 1, y: 0 },
 };
 const appearl = {
-  hidden: { opacity: 0, x: "20vw" },
-  visible: { transition: { delay: 0.4, duration: 0.5 }, opacity: 1, x: 0 },
+hidden: { opacity: 0, x: "20vw", rotate: -50 },
+  visible: {
+    transition: { delay: 0.4, duration: 0.5 },
+    opacity: 1,
+    x: 0,
+    rotate: 0,
+  },
 };
 
 const Services = () => {
